@@ -6,7 +6,7 @@ module.exports = (sequelize, DataTypes) => {
   class todoItem extends Model {
 
     static associate(models) {
-      todoItem.belongsTo(models.todolist, { foreignKey: 'listId' });
+      todoItem.belongsTo(models.todoList, { foreignKey: 'listId' });
     }
   }
   todoItem.init({
