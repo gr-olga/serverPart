@@ -12,7 +12,7 @@ module.exports = {
                     updatedAt: new Date(),
                 },
                 {
-                    todoItemId: 3,
+                    todoItemId: 1,
                     tagId: 1,
                     createdAt: new Date(),
                     updatedAt: new Date(),
@@ -28,7 +28,6 @@ module.exports = {
         )
     },
 
-    async down(queryInterface, Sequelize) {
-        await queryInterface.bulkDelete("itemTags", null, {});
+    async down(queryInterface, Sequelize) {await queryInterface.bulkDelete("itemTags", null, {});
     }
 };
